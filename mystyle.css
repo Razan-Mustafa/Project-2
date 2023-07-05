@@ -290,6 +290,8 @@ a.navbar-brand {
     margin:  20px 0 0 0;
     grid-column: 9/12;
     grid-row: 4/6;
+    color: #F5E7DA;
+    font-size: 23px;
 }
 #box2 {
     background-color: #800020;
@@ -298,6 +300,8 @@ a.navbar-brand {
     margin: 35px 0 0 0 ;
     grid-column: 9/12;
     grid-row: 5/6;
+    color: #F5E7DA;
+    font-size: 23px;
 }
 
 /* project */
@@ -811,19 +815,25 @@ a.navbar-brand {
     grid-row: 4/6;
     font-size: 30px;
 }
+
 #box1 {
     width: 100px;
     height: 20px;
     margin: 15px 0px 0px 0px;
     grid-column: 9/12;
     grid-row: 4/6;
+    font-size: 15px;
+
 }
+
 #box2 {
     width: 120px;
     height: 20px;
     margin: 0px 0px 20px 0px;
     grid-column: 9/12;
     grid-row: 6/7;
+    font-size: 15px;
+
 }
 
 /* project */

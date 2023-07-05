@@ -6,10 +6,17 @@
 #divlogo {
     background-color:#FFFBF2 ;
     text-align: center;
+    /* position: sticky;
+    top: 0px; */
 } 
 .logo { height:100px;}
 /* nav */
-.nav  {background-color: #800020; color: #FFFBF2;}
+.nav  {
+    background-color: #800020; color: #FFFBF2; 
+}
+a.navbar-brand {
+    font-size: 25px;
+}
 /* slider */
 #slider {
     display: grid; 
@@ -54,7 +61,7 @@
     margin: auto;
     padding:20px;
     border-radius: 20px;
-    animation-duration: 3s;
+    /* animation-duration: 3s;
     animation-name: slidein;}
       
     @keyframes slidein {
@@ -67,8 +74,8 @@
           margin-left: 9%;
           width: 85%;
         }
-    }
-
+    } */
+}
     
     
 #aboutme h2 {
@@ -226,12 +233,16 @@
 }
 #img1 img{
     width: 550px;
-    border: #800020 solid 10px;
+    border: #800020 solid 5px;
+    box-shadow:15px 15px 15px;
+
       
 }
 #img2 img{
     width: 550px;
-    border: #800020 solid 10px;
+    border: #800020 solid 5px;
+    box-shadow:15px 15px 15px;
+
 }
 #cerh {
     color: #800020;
@@ -536,24 +547,24 @@
     width: 115px;
 }
 
-/* FOOTER */
+/* FOOTER ----------------------------------------------------*/
 #footer {
     background-color: #800020;
     display: grid;
     max-width: 100%;
-    grid-template-rows: 30px 30px 30px 30px 30px 100px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30 30px 30px 30px 30px;
-    grid-template-columns: 4.25% 8.5% 4.5% 8.5% 11.5% 5.5% 5.5% 5.5% 5.5% 5.5% 8.5% 12.5% 2.25% 8.5%;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30 30px 30px 30px 30px;
+    grid-template-columns:10% 10% 10% 10% 10% 10% 5% 5% 5% 5% 5% 5% 5% 5%;
     
 }
 #flogo {
-    grid-column: 1/ span 3;
-    grid-row: 1/span 12;
+    grid-column: 2/ span 3;
+    grid-row: 1/span 6;
 }
 #flogo img {
-    width: 450px;
+    width: 150px;
 }
 
-#fhead {
+/* #fhead {
     color: #FFFBF2;
     grid-column: 6/ span 5 ;
     grid-row: 2/span 3; 
@@ -562,45 +573,51 @@
 #fhead h2 {
     font-size: 60px;
 
-}
+} */
 #emailrazan {
-    grid-column: 6/ span 5 ;
-    grid-row: 5/span 1; 
+    grid-column: 1/ span 5 ;
+    grid-row: 7/span 1;
+    padding-left: 110px; 
 }
 #emailrazan a {
     color:#FFFBF2;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 #phone {
-    grid-column: 6/ span 5 ;
-    grid-row: 7/span 1; 
+    grid-column: 1/ span 5 ;
+    grid-row: 8/span 1; 
+    padding-left: 80px; 
+
 }
 #phone a {
     color:#FFFBF2;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 80px;
 }
+#fcontact {
+    color: #F5E7DA;
+    font-size: 30px;
+    grid-column: 11/ span 3;
+    grid-row: 2/span 2;
+    padding: 10px 0;
+}
 #icon1 {
-    grid-column: 6/ span 1;
-    grid-row: 9/span 2;  
-    padding-left: 50px;
+    grid-column: 10/ span 1;
+    grid-row: 4/span 2;  
 }
 #icon2 {
-    grid-column: 7/ span 1;
-    grid-row: 9/span 2;   
-    padding-left: 50px;
+    grid-column: 11/ span 1;
+    grid-row: 4/span 2;   
 }
 #icon3 {
-    grid-column: 8/ span 1;
-    grid-row: 9/span 2;
-    padding-left: 50px;   
+    grid-column: 12/ span 1;
+    grid-row: 4/span 2;
 }
 #icon4 {
-    grid-column: 9/ span 1;
-    grid-row: 9/span 2;   
-    padding-left: 50px;
+    grid-column: 13/ span 1;
+    grid-row: 4/span 2;   
 }
 #myphoto2 {
     grid-column: 11/ span 2;
@@ -609,6 +626,14 @@
 #myphoto2 img {
     height: 375px;
     padding-left:50px ;
+}
+#flink {
+    list-style: none;
+    color: #F5E7DA;
+    font-size: 25px;
+    grid-column: 5/span 4; 
+    grid-row: 1/span 9; 
+    padding-left: 50px;
 }
 
 @media screen and (min-width: 1000px){
@@ -996,87 +1021,76 @@
 #refl img {
     width: 85px;
 }
-/* FOOTER */
-#footer {
-    background-color: #800020;
-    display: grid;
-    max-width: 100%;
-    grid-template-rows: 30px 30px 30px 30px 30px 100px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30 30px 30px 30px 30px;
-    grid-template-columns: 4.25% 8.5% 4.5% 8.5% 11.5% 5.5% 5.5% 5.5% 5.5% 5.5% 8.5% 12.5% 2.25% 8.5%;
-    
-}
+/* FOOTER ----------------------------------------------------*/
 #flogo {
-    grid-column: 1/ span 3;
-    grid-row: 1/span 12;
+    grid-column: 2/ span 5;
+    grid-row: 1/span 3;
 }
 #flogo img {
-    width: 200px;
-}
-
-#fhead {
-    color: #FFFBF2;
-    grid-column: 6/ span 7 ;
-    grid-row: 2/span 3; 
-    padding: 0px;
-}
-#fhead h2 {
-    font-size: 40px;
-
+    width: 100px;
 }
 #emailrazan {
-    grid-column: 5/ span 5 ;
-    padding-left: 70px;
-    grid-row: 5/span 1; 
+    grid-column: 1/ span 6 ;
+    grid-row: 4/span 1;
+    padding-left: 40px; 
 }
 #emailrazan a {
-    color:#FFFBF2;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 #phone {
-    grid-column: 6/ span 5 ;
-    grid-row: 7/span 1; 
+    grid-column: 1/ span 6 ;
+    grid-row: 5/span 1; 
+    padding-left: 5px; 
+
 }
 #phone a {
-    color:#FFFBF2;
-    text-decoration: none;
+    font-size: 15px;
+    padding-left: 80px;
+}
+#fcontact {
     font-size: 20px;
-    padding-left: 40px;
+    grid-column: 10/ span 4;
+    grid-row: 1/span 2;
+    padding: 20px 0 10px 30px;
 }
 #icon1 {
-    padding-left: 40px;
+    grid-column: 10/ span 1;
+    grid-row: 3/span 3;  
+}
+#icon1 img{
+    width: 30px;
+
 }
 #icon2 {
-    padding-left: 40px;
-}
-#icon3 {
-    padding-left: 40px;
-}
-#icon4 {
-    padding-left: 40px;
-}
-#icon1 img {
-    width: 30px;
+    grid-column: 11/ span 1;
+    grid-row: 3/span 3;   
 }
 #icon2 img{
     width: 30px;
+
+}
+#icon3 {
+    grid-column: 12/ span 1;
+    grid-row: 3/span 3;
 }
 #icon3 img{
     width: 30px;
+
 }
-#icon4 img {
+#icon4 img{
     width: 30px;
-}
-#myphoto2 {
-    grid-column: 11/ span 2;
-    grid-row: 1/span 12;
-}
-#myphoto2 img {
-    height: 160px;
-    padding-left:90px ;
-}
 
-
+}
+#icon4 {
+    grid-column: 13/ span 1;
+    grid-row: 3/span 3;   
+}
+#flink {
+    font-size: 15px;
+    grid-column: 5/span 4; 
+    grid-row: 1/span 9; 
+    padding:10px 0 0 50px;
+}
 }
 @media screen and (max-width:480px){
     #slider {
@@ -1089,19 +1103,19 @@
     }
     
     #slider h1 {
-        grid-column: 1/8; 
+        grid-column: 1/9; 
         grid-row: 6/8; 
         font-size: 40px; 
         text-align: center;
 
     }
     #myphoto {
-        grid-column: 1/8; 
+        grid-column: 1/9; 
         grid-row: 1/5; 
         width: 100%;
         height:auto;
         border-radius: 50%;
-        margin:5px 0 0 5px;
+        margin:auto;
         background-color: #800020;
         
     }
@@ -1216,6 +1230,7 @@
     grid-template-rows: 10px 30px 60px 60px 60px 60px 20px 60px ;
     grid-template-columns: 100% ;
     gap: 0;
+    height: 600px;
 }
 #img1{
     width: 100%;
@@ -1478,85 +1493,81 @@ border: #800020 solid 3px;
 #refl img {
     width: 50px;
 }
-/* FOOTER */
+/* FOOTER ----------------------------------------------------*/
 #footer {
-    background-color: #800020;
-    display: grid;
-    max-width: 100%;
-    grid-template-rows: 10px 10px 10px 20px 10px 10px 10px 10px 20px ;
-    grid-template-columns: 4.25% 8.5% 4.5% 8.5% 11.5% 5.5% 5.5% 5.5% 5.5% 5.5% 8.5% 12.5% 2.25% 8.5%;
-    
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px ;
+    max-height: 350px;
 }
 #flogo {
-    grid-column: 1/ span 3;
-    grid-row: 2/span 9;
+    grid-column:2/ span 2;
+    grid-row: 1/span 3;
 }
 #flogo img {
-    width: 100px;
-}
-
-#fhead {
-    color: #FFFBF2;
-    grid-column: 6/ span 9 ;
-    grid-row: 2/span 3; 
-    padding: 0px;
-}
-#fhead h2 {
-    font-size: 20px;
-
+    width: 80px;
 }
 #emailrazan {
-    grid-column: 5/ span 5 ;
-    padding-left: 20px;
-    grid-row: 4/span 1; 
+    grid-column: 4/ span 6 ;
+    grid-row: 1/span 2;
+    padding-left: 40px; 
+    padding-top: 5px;
 }
 #emailrazan a {
-    color:#FFFBF2;
-    text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
 }
 #phone {
-    grid-column: 6/ span 5 ;
-    grid-row: 5/span 1; 
+    grid-column: 4/ span 6 ;
+    grid-row: 2/span 2; 
+    padding-left: 5px; 
+    padding-top: 5px;
+
 }
 #phone a {
-    color:#FFFBF2;
-    text-decoration: none;
-    font-size: 12px;
-    padding-left: 20px;
+    font-size: 15px;
+    padding-left: 80px;
+}
+#fcontact {
+    font-size: 22px;
+    grid-column: 4/ span 6;
+    grid-row: 9/span 1;
+    padding: 0px 0 0px 10px;
 }
 #icon1 {
-    padding-left: 20px;
-    grid-row: 7/8;
+    grid-column: 4/ span 1;
+    grid-row: 10/span 1;  
+}
+#icon1 img{
+    width: 25px;
+
 }
 #icon2 {
-    padding-left: 25px;
-    grid-row: 7/8;
+    grid-column: 5/ span 1;
+    grid-row: 10/span 1;   
+}
+#icon2 img{
+    width: 25px;
 
 }
 #icon3 {
-    padding-left: 30px;
-    grid-row: 7/8;
+    grid-column: 6/ span 1;
+    grid-row: 10/span 1;
+}
+#icon3 img{
+    width: 25px;
 
 }
 #icon4 {
-    padding-left: 35px;
-    grid-row: 7/8;
+    grid-column: 7/ span 1;
+    grid-row: 10/span 1;   
+}
+#icon4 img{
+    width: 25px;
 
 }
-#icon1 img {
-    width: 20px;
-}
-#icon2 img{
-    width: 20px;
-}
-#icon3 img{
-    width: 20px;
-}
-#icon4 img {
-    width: 20px;
-}
-#myphoto2 {
-    display: none;
+#flink {
+    font-size: 17px;
+    grid-column: 3/span 6; 
+    grid-row: 4/span 6; 
+    padding:0px 0 0 20px;
+    text-align: center;
 }
 }
